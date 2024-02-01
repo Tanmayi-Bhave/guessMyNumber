@@ -18,6 +18,8 @@ document.querySelector(".check").addEventListener('click', function(){
     else if(guess===randNum)
     {
         document.querySelector(".message").textContent="Correct!!! You Win!!!";
+        document.querySelector("body").style.backgroundColor='orange';
+        document.querySelector(".number").style.width='30rem';
     }
     else if(guess>randNum && score >1)
     {
